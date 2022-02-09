@@ -1,10 +1,10 @@
 import React from 'react';
+import PropTypes from 'prop-types'
 //import React, { Fragment } from 'react';
 
 //FC
 
-const PrimeraApp = ({saludo = 'Hola Mundo'}) => {
-
+const PrimeraApp = ({saludo}) => {
 
     return (
         <>
@@ -13,6 +13,10 @@ const PrimeraApp = ({saludo = 'Hola Mundo'}) => {
             <p>Mi primera aplicacion</p>
         </>
     );
+}
+
+PrimeraApp.propTypes = {
+    saludo: PropTypes.string.isRequired
 }
 
 export default PrimeraApp;
