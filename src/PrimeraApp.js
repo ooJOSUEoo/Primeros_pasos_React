@@ -3,9 +3,8 @@ import React from 'react';
 
 //FC
 
-const PrimeraApp = () => {
+const PrimeraApp = ({saludo = 'Hola Mundo'}) => {
 
-    const saludo = 'Hola Mundo';
 
     return (
         <>
